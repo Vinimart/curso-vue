@@ -1,0 +1,23 @@
+{
+  "name": "curso-vue",
+  "version": "1.0.0",
+  "description": "Vue Lessons",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinimart/curso-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinimart/curso-view/issues"
+  },
+  "homepage": "https://github.com/Vinimart/curso-view#readme"
+}
