@@ -1,2 +1,2 @@
-# curso-view
+# curso-vue
 Vue Lessons and Exercises 
