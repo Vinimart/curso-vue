@@ -5,20 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
     <title>Template</title>
 </head>
 
-<body>
-    <div id="app">
-        {{ message }}
-    </div>
+<style>
+    body {
+        height: 1000px;
+    }
+</style>
+
+<body class="has-background-black">
+    <main id="app">
+        <section class="hero is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 v-once class="title">
+                        {{ title }}
+                    </h1>
+
+                    <h2 class="subtitle">
+                        {{ saudacao() }}
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="has-text-light">Portfolio :</h2>
+            <a v-bind:href="portfolio">Vinimart.github.io</a>
+        </section>
+
+    </main>
 
     <script>
         var app = new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue!'
-
+                title: 'Hello Vue!',
+                portfolio: 'https://vinimart.github.io'
+            },
+            methods: {
+                saudacao: function () {
+                    this.title = 'Olá!'
+                    return this.title
+                }
             }
         })
     </script>
